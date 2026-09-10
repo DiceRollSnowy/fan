@@ -1,6 +1,6 @@
 # DiceRoll Fan Site
 
-DiceRollのファン向けサイトです。
+だいすろーるのファン向けサイトです。
 
 ## GitHub Pages
 
