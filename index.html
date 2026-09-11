@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="common/header.css">
     <link rel="stylesheet" href="common/footer.css">
     <link rel="stylesheet" href="common/responsive.css">
+    <link rel="stylesheet" href="common/image-modal/image-modal.css">
 
     <link rel="stylesheet" href="css/fan.css">
 
@@ -91,9 +92,7 @@
             <div class="fan-grid">
 
                 <!-- 今週のだいすちゃん -->
-                <a href="https://x.com/search?q=%23%E4%BB%8A%E9%80%B1%E3%81%AE%E3%81%A0%E3%81%84%E3%81%99%E3%81%A1%E3%82%83%E3%82%93&src=hashtag_click&f=live"
-                   target="_blank" 
-                   class="fan-card">
+                <div class="fan-card js-image-modal">
 
                     <div class="fan-image">
                         <img src="https://raw.githubusercontent.com/DiceRollSnowy/DiceRollWeeklySchedule/main/DiceRollSchedule/DiceRollSchedule.png" alt="">
@@ -110,7 +109,7 @@
                             →
                         </span>
                     </div>
-                </a>
+                </div>
 
                 <!-- ファングループ -->
                 <a href="https://vrc.group/DICEFC.2817"
@@ -162,6 +161,16 @@
     </main>
 
     <!-- =========================
+         Modal
+    ========================== -->
+    <div id="imageModal" class="image-modal">
+        <button id="imageModalClose" class="image-modal-close" type="button">
+            ×
+        </button>
+        <img id="imageModalImage" class="image-modal-image" src="" alt="">
+    </div>
+
+    <!-- =========================
          Footer
     ========================== -->
     <div id="footer">
@@ -177,6 +186,7 @@
     ========================== -->
     <script src="js/config.js"></script>
     <script src="js/fan.js"></script>
+    <script src="common/image-modal/image-modal.js"></script>
 
 </body>
 </html>
