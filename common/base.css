@@ -19,15 +19,15 @@
     --color-card: rgba(255, 255, 255, 0.82);
     --color-card-solid: #ffffff;
 
-    --color-text: #355277;
-    --color-text-sub: #627a96;
+    --color-text: #354c77;
+    --color-text-sub: #627796;
 
-    --color-heading: #355277;
+    --color-heading: rgb(44, 60, 112);
 
-    --color-primary: #65a9d7;
-    --color-primary-dark: #3776aa;
+    --color-primary: #658dd7;
+    --color-primary-dark: #376daa;
 
-    --color-border: rgba(78, 152, 202, 0.4);
+    --color-border: rgba(78, 128, 202, 0.4);
 
     /* Radius */
     --radius-small: 12px;
@@ -92,11 +92,21 @@ body {
     color: var(--color-text);
 
     background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(255, 255, 255, 0.8),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(190, 224, 255, 0.35),
+            transparent 40%
+        ),
         linear-gradient(
             180deg,
-            var(--color-background) 0%,
-            var(--color-background-sub) 45%,
-            var(--color-white) 100%
+            #dff7ff 0%,
+            #edfaff 45%,
+            #ffffff 100%
         );
 
     line-height: 1.7;
